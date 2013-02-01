@@ -5,11 +5,11 @@ name:                distributed-process-demos
 version:             0.1.0.0
 synopsis:            Cloud Haskell Demo Applications
 -- description:         
-homepage:            http://github.com/haskell-distributed/distributed-process
+homepage:            http://haskell-distributed.github.com
 license:             BSD3
 license-file:        LICENSE
 author:              Edsko de Vries
-maintainer:          edsko@well-typed.com
+maintainer:          edsko@well-typed.com, watson.timothy@gmail.com
 copyright:           Well-Typed LLP
 category:            Control
 build-type:          Simple

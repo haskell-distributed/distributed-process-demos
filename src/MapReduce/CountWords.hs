@@ -10,6 +10,7 @@ import Control.Distributed.Process
 import Control.Distributed.Process.Closure
 import MapReduce
 import MonoDistrMapReduce hiding (__remoteTable)
+import Prelude hiding (Word)
 
 type Document  = String
 type Word      = String
@@ -31,4 +32,3 @@ remotable ['countWords_]
 
 distrCountWords :: [NodeId] -> Map FilePath Document -> Process (Map Word Frequency)
 distrCountWords = distrMapReduce ($(mkClosure 'countWords_) ())
-
